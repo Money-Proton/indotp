@@ -2,6 +2,8 @@
 import requests as req 
 import random
 
+## Changes in the API Key are made to make sure that the App is able to send SMS properly
+
 def otp_create():
 	otp = random.randint(1999,9999)
 	return otp
@@ -14,7 +16,7 @@ def send_otp(mobile_num):
 	payload_part_3 = f"{otp}"
 	payload = payload_part_1 + payload_part_2 + payload_part_3
 	headers = {
-	'authorization': "uvxi9puUDoVKtks0ANQ5tMPotfLIGR9EhpejQa4ULag6MtsnRpQH7rbOd1S9",
+	'authorization': "FLAtMGWmvC5oeJ76GzD8OrxuFu1VDS662w9DY48Pl6CAtTKEVaYbsb3rZnLH",
     'cache-control': "no-cache",
     'content-type': "application/x-www-form-urlencoded"
 	}
